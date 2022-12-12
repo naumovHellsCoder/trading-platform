@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.sql.Date;
-import java.time.LocalDateTime;
+import java.time.Instant;
 
 @Entity
 @AllArgsConstructor
@@ -18,7 +18,7 @@ public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ordersId;
-    private Date dateCreate;
+    private Instant dateCreate;
     private Integer sumTransaction;
 
 
