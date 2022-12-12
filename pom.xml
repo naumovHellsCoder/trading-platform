@@ -13,6 +13,7 @@
         <module>gateway-service</module>
         <module>news-service</module>
         <module>rate-service</module>
+        <module>transaction-service</module>
     </modules>
 
     <properties>
