@@ -19,4 +19,19 @@ public class WebSecurityConfig {
         return httpSecurity.build();
 
     }
+
+}
+class Main{
+    public static void main(String[] args) {
+
+    }
+    class One{
+        @Override
+        public boolean equals(Object obj) {
+            return super.equals(obj);
+        }
+    }
+    class Two{
+
+    }
 }
