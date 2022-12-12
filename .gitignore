@@ -1,0 +1,4 @@
+# Project exclude paths
+/eureka/target/
+/gateway-service/target/
+/news-service/target/
