@@ -1,6 +1,8 @@
 spring:
   application:
     name: rate-service
+  jpa:
+    show-sql: true
 server:
   port: 8084
 eureka:

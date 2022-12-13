@@ -7,7 +7,6 @@ import org.springframework.security.web.server.SecurityWebFilterChain;
 
 @EnableWebFluxSecurity
 public class WebSecurityConfig {
-
     @Bean
     public SecurityWebFilterChain securityWebFilterChain
             (ServerHttpSecurity httpSecurity){
@@ -17,21 +16,5 @@ public class WebSecurityConfig {
                         .anyExchange().authenticated())
                 .oauth2ResourceServer(ServerHttpSecurity.OAuth2ResourceServerSpec::jwt);
         return httpSecurity.build();
-
-    }
-
-}
-class Main{
-    public static void main(String[] args) {
-
-    }
-    class One{
-        @Override
-        public boolean equals(Object obj) {
-            return super.equals(obj);
-        }
-    }
-    class Two{
-
     }
 }
