@@ -12,11 +12,15 @@ spring:
           uri: lb://user-service:8081
           predicates:
             - Path=/users/**
+        - id: rate-service
+          uri: lb://rate-service:8084
+          predicates:
+            - Path=/rate/**
   security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/realms/spring-cloud-realm
+          issuer-uri: http://localhost:8080/realms/trading-platform
 server:
   port: 8082
 eureka:
